@@ -40,8 +40,8 @@ export default function Root() {
           variant: "default",
           title: "Tilin hallinta",
           description: authStore.authToast,
-          
-        }, )
+
+        },)
       }
 
       if (authStore.isAuth) {
@@ -123,7 +123,8 @@ export default function Root() {
                 <span className="sr-only">Toggle user menu</span>
               </Button>
             </DropdownMenuTrigger>
-            {authSnap.isAuth ? <DropdownMenuContent align="end">
+            {authSnap.isAuth 
+            ? <DropdownMenuContent align="end">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Settings</DropdownMenuItem>
@@ -132,9 +133,8 @@ export default function Root() {
               <DropdownMenuItem onClick={() => authStore.logout()}>
                 Kirjaudu ulos
               </DropdownMenuItem>
-            </DropdownMenuContent> : <DropdownMenuContent align="end">
-
-
+            </DropdownMenuContent> 
+            : <DropdownMenuContent align="end">
               <DropdownMenuItem>
                 <Link to="/login" className="text-muted-foreground hover:text-foreground">
                   Kirjaudu

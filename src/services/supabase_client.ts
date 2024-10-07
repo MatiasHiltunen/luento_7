@@ -31,3 +31,15 @@ export async function addPointsToDb(nickname: string, points: number) {
     return data.at(0)
 
 }
+
+export async function getRankingList() {
+    
+    const {data, error} = await supabase.from('ranking').select('*')
+
+    if(error){
+        console.log(error)
+    }
+
+    return data
+
+}
