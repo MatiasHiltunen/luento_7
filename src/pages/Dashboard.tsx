@@ -8,10 +8,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
+
 import { Input } from "@/components/ui/input"
 import { TableCaption, TableHeader, TableRow, TableHead, TableBody, TableCell, TableFooter } from "@/components/ui/table"
-import { getRankingList, supabase } from "@/services/supabase_client"
+import {  supabase } from "@/services/supabase_client"
 import { Table } from "@/components/ui/table"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
